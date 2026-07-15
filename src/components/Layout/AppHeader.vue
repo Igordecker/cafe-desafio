@@ -14,23 +14,23 @@ const isRankingPage = computed(() => route.name === 'ranking')
 
 const liHome = computed(() => {
   if (isHomePage.value) {
-    return 'liAtiva' 
+    return 'liAtiva'
   } else {
-    return 'LiDesativa' 
+    return 'LiDesativa'
   }
 })
 const liAvaliacao = computed(() => {
   if (isAvaliacaoPage.value) {
-    return 'liAtiva' 
+    return 'liAtiva'
   } else {
-    return 'LiDesativa'  
+    return 'LiDesativa'
   }
 })
 const liRanking = computed(() => {
   if (isRankingPage.value) {
-    return 'liAtiva' 
+    return 'liAtiva'
   } else {
-    return 'LiDesativa' 
+    return 'LiDesativa'
   }
 })
 </script>
@@ -46,7 +46,7 @@ const liRanking = computed(() => {
         <li :class="liHome"><RouterLink to="/"><HomeOutlineIcon height="1.5em"></HomeOutlineIcon>  Home</RouterLink></li>
         <li :class="liAvaliacao"><RouterLink to="/avaliacao"><ClipboardTextOutlineIcon height="1.5em"></ClipboardTextOutlineIcon> Avaliação</RouterLink></li>
         <li :class="liRanking"><RouterLink to="/ranking"><TrophyIcon height="1.5em"></TrophyIcon> Ranking</RouterLink></li>
-       </ul> 
+       </ul>
     </nav>
 </div>
 <div class="usuario">
@@ -61,15 +61,15 @@ div.container{
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    padding: 0.5vw 2vw;
+    padding: 1vw 2vw;
     border-bottom: 1px solid rgb(179, 179, 179);;
 }
 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 div.logo a{
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
 }
 ul{
@@ -77,7 +77,7 @@ ul{
 }
 ul li{
     margin: 0 20px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     align-items: center;
     color: black;
 }
@@ -87,8 +87,8 @@ ul li.liAtiva{
 }
 ul li a{
     display: flex;
-    align-items: center;    
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 div.usuario {
