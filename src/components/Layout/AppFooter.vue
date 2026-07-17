@@ -23,7 +23,7 @@ const isRankingPage = computed(() => route.name === 'ranking')
         </div>
       </div>
       <div class="footer-avaliacao" v-if="isAvaliacaoPage">
-        <StarOutlineIcon height="4em" style="width: 4em; height: 4em; color: white; backgroundColor: brown; borderRadius: 100vw; padding: 0.5vw; boxSizing: content-box;"></StarOutlineIcon>
+        <StarOutlineIcon height="4em" style="width: 4em; height: 4em; color: white; background-color: brown; border-radius: 100vw; padding: 0.5vw; box-sizing: content-box;"></StarOutlineIcon>
         <div class="content">
           <h3>Dicas:</h3>
           <ul>
@@ -41,7 +41,7 @@ const isRankingPage = computed(() => route.name === 'ranking')
           <p>Cada critério recebe uma nota de 0 a 10 e a média final define a classificação.</p>
         </div>
       </div>
-      <img src="/public/images/footerimage.png" alt="café" />
+      <img src="/images/footerimage.png" alt="café"/>
     </div>
   </footer>
 </template>

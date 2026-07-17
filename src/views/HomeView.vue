@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
 <template>
   <main>
     <section class="banner">
-      <img src="/public/images/coffe.png" alt="">
+      <img src="/images/coffe.png" alt="">
       <div class="container">
         <h2>
           Campeonato de Avaliação <br />
@@ -53,7 +53,7 @@ import { RouterLink } from 'vue-router';
   </li>
 </ul>
       </div>
-      <RouterLink to="/avaliacoes"><ClipboardTextOutlineIcon height="1.5em"></ClipboardTextOutlineIcon>Ver avaliações</RouterLink>
+      <RouterLink to="/avaliacao"><ClipboardTextOutlineIcon height="1.5em"></ClipboardTextOutlineIcon>Ver avaliações</RouterLink>
     </section>
   </main>
 </template>
