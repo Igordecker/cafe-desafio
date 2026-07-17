@@ -14,7 +14,7 @@ const quantitystars = countingstars(props.media)
     <p v-else>{{ posicao }}</p></td>
     <td class="nome">{{ props.nome }}</td>
     <td class="produtor">{{ props.produtor }}</td>
-    <td class="media">{{ props.media.toFixed(1) }}</td>
+    <td class="media">{{ props.media }}</td>
     <td class="stars"><Icon
       v-for="estrela in 5"
       :key="estrela"
