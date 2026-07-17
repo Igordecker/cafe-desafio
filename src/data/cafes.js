@@ -10,7 +10,7 @@ const cafesAvaliados = reactive([
     corpo: 7,
     finalizacao: 8,
     media: 7.4,
-    data: '14/07/2026, 15:40:41',
+    data: '2026-07-14T15:40:41',
     observacoes: 'Este é um café esquisito',
   },
   {
@@ -23,7 +23,7 @@ const cafesAvaliados = reactive([
     corpo: 8,
     finalizacao: 9,
     media: 8.2,
-    data: '12/07/2026, 12:50:41',
+    data: '2026-07-12T12:50:41',
     observacoes: 'Fds',
   },
   {
@@ -36,7 +36,7 @@ const cafesAvaliados = reactive([
     corpo: 7,
     finalizacao: 8,
     media: 6.6,
-    data: '09/07/2026, 12:35:51',
+    data: '2026-07-09T12:35:51',
     observacoes: 'Este é um café esquisito',
   },
   {
@@ -49,7 +49,7 @@ const cafesAvaliados = reactive([
     corpo: 8,
     finalizacao: 9,
     media: 7.8,
-    data: '14/07/2026, 16:00:22',
+    data: '2026-07-14T16:00:22',
     observacoes: 'Bem equilibrado e doce.',
   },
   {
@@ -62,7 +62,7 @@ const cafesAvaliados = reactive([
     corpo: 9,
     finalizacao: 10,
     media: 9.6,
-    data: '13/07/2026, 10:15:30',
+    data: '2026-07-13T10:15:30',
     observacoes: 'Notas florais muito intensas.',
   },
   {
@@ -75,7 +75,7 @@ const cafesAvaliados = reactive([
     corpo: 7,
     finalizacao: 8,
     media: 7.0,
-    data: '11/07/2026, 09:45:12',
+    data: '2026-07-11T09:45:12',
     observacoes: 'Corpo médio, mas finalização curta.',
   },
   {
@@ -88,9 +88,8 @@ const cafesAvaliados = reactive([
     corpo: 10,
     finalizacao: 9,
     media: 9.2,
-    data: '08/07/2026, 14:20:00',
+    data: '2026-07-08T14:20:00',
     observacoes: 'Café excelente para o dia a dia.',
   }
 ]);
-
 export { cafesAvaliados };

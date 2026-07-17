@@ -1,21 +1,27 @@
+import { computed } from 'vue'
 import { cafesAvaliados } from '@/data/cafes'
-const quantidadedecafesAvaliados = cafesAvaliados.length
-let cafecommaiornota
-for (let cafe of cafesAvaliados) {
-  if (cafecommaiornota == undefined || cafe.media > cafecommaiornota.media) {
-    cafecommaiornota = cafe
-  }
-}
-let cafeMaisRecente
-for (let cafe of cafesAvaliados) {
-  const dataAtual = new Date(cafe.data)
-  if (cafeMaisRecente == undefined) {
-    cafeMaisRecente = cafe
-  } else {
-    const dataMaisRecente = new Date(cafeMaisRecente.data)
-    if (dataAtual.getTime() > dataMaisRecente.getTime()) {
-      cafeMaisRecente = cafe
+
+const quantidadeDeCafesAvaliados = computed(() => cafesAvaliados.length)
+
+const cafeComMaiorNota = computed(() => {
+  let melhorCafe
+  for (let cafe of cafesAvaliados) {
+    if (melhorCafe == undefined || cafe.media > melhorCafe.media) {
+      melhorCafe = cafe
     }
   }
-}
-export { quantidadedecafesAvaliados, cafecommaiornota, cafeMaisRecente }
+  return melhorCafe
+})
+
+const cafeMaisRecente = computed(() => {
+  let recente
+  for (let cafe of cafesAvaliados) {
+    const dataAtual = new Date(cafe.data)
+    if (recente == undefined || dataAtual.getTime() > new Date(recente.data).getTime()) {
+      recente = cafe
+    }
+  }
+  return recente
+})
+
+export { quantidadeDeCafesAvaliados, cafeComMaiorNota, cafeMaisRecente }

@@ -3,7 +3,7 @@ import ClipboardTextOutlineIcon from '@iconify-vue/mdi/clipboard-text-outline';
 import PeopleGroupIcon from '@iconify-vue/mdi/people-group';
 import TrophyOutlineIcon from '@iconify-vue/mdi/trophy-outline';
 import ClockOutlineIcon from '@iconify-vue/mdi/clock-outline';
-import { quantidadedecafesAvaliados, cafeMaisRecente, cafecommaiornota } from '@/Utils/HomeUtils';
+import { quantidadeDeCafesAvaliados, cafeMaisRecente, cafeComMaiorNota } from '@/Utils/HomeUtils';
 import { RouterLink } from 'vue-router';
 </script>
 <template>
@@ -29,7 +29,7 @@ import { RouterLink } from 'vue-router';
   <PeopleGroupIcon height="8em" style="border-radius: 100px;background-color: #f8f5f2; color: #5A3621;"></PeopleGroupIcon>
 <div>
   <h3>Total de Cafés Avaliados</h3>
-  <p class="numero" style="color: #5A3621;">{{ quantidadedecafesAvaliados }}</p>
+  <p class="numero" style="color: #5A3621;">{{ quantidadeDeCafesAvaliados}}</p>
   <p>Cafés</p>
 </div>
   </li>
@@ -37,9 +37,9 @@ import { RouterLink } from 'vue-router';
    <TrophyOutlineIcon height="8em" style="border-radius: 100px;background-color: #f8f5f2; color: #385411"></TrophyOutlineIcon>
     <div>
       <h3>Café com Maior Nota</h3>
-      <p class="numero" style="color: #385411;">{{ cafecommaiornota.media }}</p>
-      <p class="grande">{{ cafecommaiornota.nome }}</p>
-      <p>{{ cafecommaiornota.produtor }}</p>
+      <p class="numero" style="color: #385411;">{{ cafeComMaiorNota.media }}</p>
+      <p class="grande">{{ cafeComMaiorNota.nome }}</p>
+      <p>{{ cafeComMaiorNota.produtor }}</p>
     </div>
   </li>
   <li class="recente">
@@ -48,7 +48,7 @@ import { RouterLink } from 'vue-router';
 <h3>Última Avaliação</h3>
 <p class="numero" style="color: #2A507D;">{{ cafeMaisRecente.media }}</p>
 <p class="grande">{{ cafeMaisRecente.nome }}</p>
-<p>{{ cafeMaisRecente.data }}</p>
+<p>{{ new Date(cafeMaisRecente.data).toLocaleString('pt-BR') }}</p>
   </div>
   </li>
 </ul>

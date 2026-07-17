@@ -1,7 +1,7 @@
 <script setup>
 import TrophyOutlineIcon from '@iconify-vue/mdi/trophy-outline';
 import SignalCellularOutlineIcon from '@iconify-vue/mdi/signal-cellular-outline';
-import { quantidadedecafesAvaliados } from '@/Utils/HomeUtils';
+import { quantidadeDeCafesAvaliados } from '@/Utils/HomeUtils';
 import LeaderboardTable from '@/components/LeaderboardTable.vue';
 </script>
 <template>
@@ -19,7 +19,7 @@ import LeaderboardTable from '@/components/LeaderboardTable.vue';
         <SignalCellularOutlineIcon height="3vw" style="color: rgb(69, 15, 15);"></SignalCellularOutlineIcon>
         <div class="content">
           <h3>Total de cafés avaliados</h3>
-          <p>{{ quantidadedecafesAvaliados }}</p>
+          <p>{{ quantidadeDeCafesAvaliados }}</p>
         </div>
       </div>
       </div>
